@@ -9,6 +9,10 @@ import { NoMatch } from "./component/NoMatch";
 import { OrderSummary } from "./component/OrderSummary";
 import { UserDetails } from "./component/UserDetails";
 import { Products } from "./component/Products";
+import { Profile } from "./component/Profile";
+import { Login } from "./component/Login";
+
+
 import "./styles.css";
 
 export default function App() {
@@ -27,6 +31,8 @@ export default function App() {
           <Route index path="featured" element={<FeaturedProducts />} />
           <Route path="newproducts" element={<NewProducts />} />
         </Route>
+        <Route path="profile" element={<Profile />}></Route>
+        <Route path="login" element={<Login />}></Route>
         <Route path="*" element={<NoMatch />}></Route>
       </Routes>
     </>
